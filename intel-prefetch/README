@@ -1,5 +1,11 @@
 Program to disable the hardware prefetcher on various Intel processors.
 
+1. Install msr-tools and load it as kernel modul
+  modprobe msr
+2. make
+3. enable.sh
+4. disable.sh
+
 Core2 uses 0x1a0 MSR, NHM and newer 0x1a4
 
 Note, you need the msr kernel module installed ("modprobe msr")
